@@ -1,6 +1,6 @@
 {
   "name": "tips-anytime",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An app for recording tips or ideas at anytime.",
   "main": "index.js",
   "dependencies": {
