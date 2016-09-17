@@ -39,14 +39,14 @@ process.env.REACT_WEBPACK_ENV = env;
 module.exports = {
   context: __dirname + '/',
   entry: { // Each property of entry would become a chuck!
-    entrance: './entry.js'
+    entrance: ['./entry.js', './src/js/index']
     // search: ['./src/js/search', './src/js/search-result'] // All in this array become one chuck!
   },
   output: {
     path: __dirname + '/build', // (Required!) The output directory as absolute path.
-    filename: '[name].common.js', // Make sure to use [name] or [id] in output.filename
+    filename: '[name].build.js', // Make sure to use [name] or [id] in output.filename
     chuckFilename: '[id].bundle.js', // Have no idea what it does ...
-    publicPath: './assets/' // Specifies the public URL of the output files when referenced in a browser.
+    publicPath: '' // Specifies the public URL of the output files when referenced in a browser.
     // publicPath: 'http://cdn.example.com/assets/[hash]/' // Using a CDN and hashes for assets.
   },
   resolve: { // Options affecting the resolving of modules.
@@ -99,7 +99,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif|webp|woff|woff2)$/,
-        loader: 'url-loader?limit=8192'
+        loader: 'url-loader?limit=8192' // Only images not more than 8kb would be packed into Base64.
       },
       {
         test: /\.(mp4|ogg|svg)$/,

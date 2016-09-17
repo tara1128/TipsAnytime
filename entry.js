@@ -15,7 +15,6 @@ console.log('entry.js is ok!');
   * the plugin 'ExtractTextPlugin' will make them into one css file,
   * which you need to add into html with link tag, manually.
  **/
+
 require('./src/styles/index.css');
 require('./src/styles/details.css');
-
-
