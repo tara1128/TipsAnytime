@@ -27,6 +27,6 @@ body {
   width: 300px;
   height: 300px;
   border: 1px solid #ddd;
-  background: url(ed0394168e5265fc85d5c8550f59fccd.jpg) 50% 50% no-repeat;
+  background: url('../images/mydog.jpg') 50% 50% no-repeat;
   background-size: 250px 250px;
 }
