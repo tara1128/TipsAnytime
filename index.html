@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="keywords" content="HTML,CSS,Javascript,HTTP,Ajax,Node,React,Webpack">
+<meta name="description" content="TipsAnytime, an webapp created by Alex Wang.">
+<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+<link type="text/css" href="styles/reset.css" rel="stylesheet">
+<link type="text/css" href="build/entrance.css" rel="stylesheet">
+<title> TipsAnytime - Keep your ideas anytime you want! </title>
+</head>
+<body>
+  <div class="tips-wrapper" id="tipsWrapper">
+
+    <div class="tips-header" id="tipsHeader">
+      <div class="tips-logo">
+        <h1>TipsAnytime !</h1>
+      </div>
+      <div class="tips-menu">
+        <ul>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JS</a></li>
+          <li><a href="#">Node</a></li>
+          <li><a href="#">HTTP</a></li>
+        </ul>
+      </div>
+    </div><!-- /end #tipsHeader -->
+
+    <div class="tips-add" id="tipsAdd">
+      <a class="tips-main-btn" id="tipsMainBtn" href="javascript:;">Add a Tip !</a>
+    </div><!-- /end #tipsAdd -->
+
+    <div class="tips-list" id="tipsList">
+      <ul>
+        <li class="tips-one-tip">
+          <h2 class="tip-title">I am a title of one tip</h2>
+          <div class="tip-infos">
+            <span class="tip-author">Alex Wang</span>
+            <span class="tip-category">Node</span>
+            <span class="tip-date">2016-09-18 19:34:23</span>
+          </div>
+          <div class="tip-content">
+            <p>Here is the main content of this tip, characters are less than 140. But actually you can enter as many as you want, but we only display the first 140 characters for you. This is just like a twitter or a microblog. We believe that you can express well in 140 words.</p>
+          </div>
+        </li><!-- /end of one tip -->
+
+        <li class="tips-one-tip">
+          <h2 class="tip-title">The second title of a tip</h2>
+          <div class="tip-infos">
+            <span class="tip-author">Joe Smith</span>
+            <span class="tip-category">HTTP</span>
+            <span class="tip-date">2016-09-09 10:45:09</span>
+          </div>
+          <div class="tip-content">
+            <p>Characters are less than 140 please.</p>
+            <p>But actually you can enter as many as you want, but we only display the first 140 characters for you. This is just like a twitter or a microblog. We believe that you can express well in 140 words.</p>
+          </div>
+        </li><!-- /end of one tip -->
+      </ul>
+    </div><!-- /end #tipsList -->
+
+
+
+
+
+
+
+
+
+
+
+  </div><!-- /end #tipsWrapper -->
+  <script src="build/entrance.build.js"></script>
+</body>
+</html>

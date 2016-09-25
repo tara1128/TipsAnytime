@@ -1,8 +1,7 @@
 /*
   Webpack configuration
   Author: Alex Wang
-  Based on the official document of webpack.
-  Latest modified 2016-09-17 07:35
+  Latest modified 2016-09-25 12:11
 */
 'use strict';
 
